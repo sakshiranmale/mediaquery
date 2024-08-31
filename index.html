@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School</title>
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color:wheat;
+            color: #2b2d42;
+        }
+
+        header {
+            background:  #2b2d42 ;
+            color: #e9c46a;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #e76f51;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 4px solid #264653;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a img {
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            margin: 20px 0;
+            background:#e9c46a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        section img {
+            width: 400px;
+            border-radius: 8px solid black;
+        }
+
+        footer {
+            background:  #e76f51;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: pink;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        
+        }
+
+        
+
+        .btn:hover {
+            background:#e76f51;
+        }
+
+        /* Media Queries */
+        @media (max-width: 798px) { 
+        
+            section {
+                flex-direction: column;
+                text-align: center;
+                background-color: #ff4d88
+                ;
+            }}
+            @media (min-width: 692px) 
+        { 
+        
+            section {
+                flex-direction: column;
+                text-align: center;
+                background-color:aqua;
+            }
+
+            section img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header,
+            footer {
+                font-size: 14px;
+                padding: 10px 0;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our School</h1>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#about"><img src="https://www.shutterstock.com/shutterstock/photos/2491219799/display_1500/stock-vector-school-icon-color-or-logo-illustration-glyph-color-blue-style-2491219799.jpg"
+                 alt="About Us">About Us</a>
+            <a href="#programs"><img src="https://www.shutterstock.com/shutterstock/photos/2195189463/display_1500/stock-vector-kids-coding-education-concept-childrens-kode-school-vector-illustration-2195189463.jpg"
+                 alt="Programs">Programs</a>
+            <a href="#admissions"><img src="https://www.shutterstock.com/shutterstock/photos/2507314041/display_1500/stock-vector-back-to-school-illustration-showcasing-books-alongside-a-paper-plane-highlighting-the-excitement-2507314041.jpg"
+                 alt="Admissions">Admissions</a>
+            <a href="#contact"><img src="https://www.shutterstock.com/shutterstock/photos/2153900065/display_1500/stock-vector-call-icon-vector-flat-design-2153900065.jpg"
+                 alt="Contact Us">Contact Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIwsL-pbkbiNEWxbRRwgfXGFp_KSROv6DrQ&s" alt="About Our School" >
+            <div>
+                <h2>About Our School</h2>
+                <p>Our school has a rich history of academic excellence...</p>
+                <a href="#contact" class="btn">Learn More</a>
+            </div>
+        </section>
+
+        <section id="programs">
+            <img src="https://www.businessbecause.com/uploads/default/news/images/1620734449.png" alt="Programs Offered" >
+            <div>
+                <h2>Programs Offered</h2>
+                <p>We offer a variety of programs to cater to the needs of all students...</p>
+                <a href="#contact" class="btn">Explore Programs</a>
+            </div>
+        </section>
+
+        <section id="admissions">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRgzAr7KkQKDva0uXStv8k4NTg3IzzUgujw&s"
+             alt="Admissions Process"  height="300px">
+            <div>
+                <h2>Admissions Process</h2>
+                <p>Learn about our admissions process and how to apply...</p>
+                <a href="#contact" class="btn">Apply Now</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <img src="https://www.faithchristianeagles.com/banner7_1.jpeg" alt="Contact Us" >
+            <div>
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feel free to reach out to us...</p>
+                <a href="mailto:info@ourschool.com" class="btn">Email Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3> welcome our school</h3>
+        <p>&copy; 2024 Our School. All rights reserved.</p>
+    </footer>
+
+    
+      
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
